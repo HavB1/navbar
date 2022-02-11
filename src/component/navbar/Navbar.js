@@ -1,5 +1,5 @@
 import React from "react";
-import { LogoText } from "../styles/Logo.styled";
+import { LogoImg, LogoText, Logo } from "../styles/Logo.styled";
 import {
   LeftSection,
   MiddleSection,
@@ -8,6 +8,7 @@ import {
   NavBtnLink,
   NavLink,
   RightSection,
+  Chevron,
 } from "../styles/Navbar.styled";
 
 const Navbar = () => {
@@ -15,7 +16,8 @@ const Navbar = () => {
     <>
       <NavbarContainer>
         <LeftSection>
-          <LogoText>4_SAISONS</LogoText>
+          {/* <LogoImg src="../../assets/images/Icon.png" alt="Logo" /> */}
+          <LogoText>4-SAISONS</LogoText>
         </LeftSection>
         <MiddleSection>
           <NavLink to="/">Acceuil</NavLink>
@@ -26,7 +28,7 @@ const Navbar = () => {
         <RightSection>
           <NavBtn>
             <NavBtnLink to="/">Se Connecter</NavBtnLink>
-            <NavBtnLink to="/">Solidarite</NavBtnLink>
+            <Chevron />
           </NavBtn>
         </RightSection>
       </NavbarContainer>
